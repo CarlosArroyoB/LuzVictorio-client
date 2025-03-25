@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    gap: -3em;
+    align-items: center;
+      width: 100%;
+      text-align: center;
+      font-size: 17px;
+      background-color: white;
+}
+header h1 {
+    padding-left: 2.5em;
+    text-align: center; /* Centra el texto dentro del h1 */
+}
+header img{
+    width: 42.46px;
+}
+
+head
+.content {
+    padding-top: 4em;
+    height: 1500px; /* Solo para simular scroll */
+}
+
+.content img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
