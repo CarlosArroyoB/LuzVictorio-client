@@ -1,36 +1,210 @@
-body{
+body {
     padding: 0;
     margin: 0;
-
+    background-color: #FBF3E9;
 }
-header{
+
+header {
+    width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-around;
-    gap: -3em;
     align-items: center;
-      width: 100%;
-      text-align: center;
-      font-size: 17px;
-      background-color: white;
+    background-color: white;
+    height: 60px;
 }
+
 header h1 {
+    font-size: 24px;
     padding-left: 2.5em;
     text-align: center; /* Centra el texto dentro del h1 */
 }
-header img{
+
+header img {
     width: 42.46px;
 }
 
-head
 .content {
-    padding-top: 4em;
-    height: 1500px; /* Solo para simular scroll */
-}
-
-.content img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('components/bgimg.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-top: 1em;
+    height: 929px;
 
 }
+.content .name {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding-top: 4em;
+}
+.content h1{
+    font-size: 140px;
+    margin: 0;
+}
+.content p{
+    font-size: 19px;
+    text-align: center;
+    width: 700px;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;    
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+    margin-bottom: 4em;
+}
+div a{
+    color: white;
+  
+    padding: 1em 2em;
+    font-style: italic;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.client {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 94vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.client > div:first-child {
+    align-self: flex-start;
+    padding-top: 1em;
+    margin-left: 12em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+}
+
+.client > div:last-child{
+    align-self: flex-start;
+    padding-top: 1em;
+    margin-left: 12em;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 0em;
+}
+.client > div:last-child p{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding-left: 18em;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 0.2em;
+    margin: 0;
+    text-align: start;
+    width: 35em;
+}
+.client > div:first-child h3,
+.client > div:last-child h3 {
+    font-size: 25px;
+    color: #000000;
+    padding-top: 0.2em;
+    margin: 0;
+}
+.client > div:first-child img,
+.client > div:last-child img{
+    width: 180px;
+    height: 12px;
+    margin-top: 1em;
+    padding-left: 0.1em;
+}
+.client > div:first-child h2 {
+    font-size: 37px;
+    color: #000000;
+    margin: 0;
+    width: 10em;
+    font-weight: 2000;
+    padding-top: 0.2em;
+    line-height: 1;
+    padding-bottom: 0.5em;
+}
+
+.client > div:last-child h2{
+    font-size: 37px;
+    color: #000000;
+    margin: 0;
+    line-height: 1;
+    width: 15em;
+    font-weight: 1000;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+}
+.studiesCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 2em;
+    background-color: #F5E1C8;
+    width: 100%; /* Cambia de 91em a 100% para que sea más flexible */
+    max-width: 91em; /* Opcional: establece un ancho máximo */
+
+}
+
+div .sCard {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 21em;
+    height: 23em;
+}
+
+.first {
+    background-image: url('components/imageFirst.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+.second {
+    background-image: url('components/imageSecond.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.third {
+    background-image: url('components/imageThird.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.luzInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 94vh;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #BFA9A7;
+}
+
+
