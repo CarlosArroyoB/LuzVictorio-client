@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #FBF3E9;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Establece la fuente */
 }
 
 header {
@@ -102,16 +103,15 @@ div a{
     gap: 0em;
 }
 .client > div:last-child p{
-    font-size: 17px;
-    display: flex;
+    font-size: 14px;
     align-items: center;
-    padding-left: 18em;
+    padding-left: 33em;
     font-weight: 400;
     color: #000000;
-    padding-top: 0.2em;
+    padding-top: 3em;
     margin: 0;
     text-align: start;
-    width: 35em;
+    width: 38em;
 }
 .client > div:first-child h3,
 .client > div:last-child h3 {
@@ -128,23 +128,23 @@ div a{
     padding-left: 0.1em;
 }
 .client > div:first-child h2 {
-    font-size: 37px;
-    color: #000000;
-    margin: 0;
-    width: 10em;
-    font-weight: 2000;
-    padding-top: 0.2em;
-    line-height: 1;
-    padding-bottom: 0.5em;
-}
-
-.client > div:last-child h2{
-    font-size: 37px;
+    font-size: 30px;
     color: #000000;
     margin: 0;
     line-height: 1;
     width: 15em;
-    font-weight: 1000;
+    font-weight: 600;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.client > div:last-child h2{
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+    line-height: 1;
+    width: 15em;
+    font-weight: 600;
     padding-top: 0.2em;
     padding-bottom: 0.5em;
 }
@@ -153,11 +153,11 @@ div a{
     flex-wrap: wrap;
     justify-content: space-between; 
     align-items: center; 
-    margin: 0 auto; /* Centra el contenedor */
+    margin: 0 auto; 
     padding: 2em;
     background-color: #F5E1C8;
-    width: 100%; /* Cambia de 91em a 100% para que sea más flexible */
-    max-width: 91em; /* Opcional: establece un ancho máximo */
+    width: 100%; 
+    max-width: 91em; 
 
 }
 
@@ -198,13 +198,57 @@ div .sCard {
 }
 .luzInfo {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 94vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80% 20%;
+
+    height: 55.9em;
     max-width: 100%;
     margin: 0 auto;
     background-color: #BFA9A7;
+    background-image: url('components/luzPhoto.png');
+    background-repeat: no-repeat;
+    background-position: center 30%; 
+    background-size: 34em;
 }
+
+.luzInfo .left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17.5em;
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-left: 1em;
+    width: 30em;
+    gap: 1em;
+}
+.left .logo {
+    width: 8em;
+   
+}
+.left .rectangle {
+    width: 11em;
+}
+.left h1 {
+    font-size: 85px;
+    color: #2C2C2C;
+    margin: 0;
+    padding-top: 0.2em;
+    font-weight: 2000;
+    line-height: 1;
+
+    padding-bottom: 0.5em;
+}
+.left p{
+    font-size: 21px;
+    text-align: start;
+    margin: 0;
+    width: 20em;
+}
+
 
 
